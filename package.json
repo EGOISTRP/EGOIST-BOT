@@ -1,0 +1,15 @@
+{
+    "name": "egoist-bot",
+    "version": "1.0.0",
+    "description": "A Discord bot for EGO!ST ROLEPLAY server",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "discord.js": "^14.15.3",
+        "node-cron": "^3.0.2"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+}
