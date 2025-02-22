@@ -18,7 +18,25 @@ EGO!ST Bot is a feature-rich Discord bot for the EGO!ST ROLEPLAY server, built w
 - Discord Bot Token ([Discord Developer Portal](https://discord.com/developers/applications))  
 
 ## Installation
+.replit
+Add this for Replit compatibility:
+``run = "node index.js"``
+# EGO!ST Bot
 
+A Discord bot for the EGO!ST ROLEPLAY server with giveaways, tickets, reaction roles, and more.
+
+## Setup
+1. Clone the repo: `git clone https://github.com/yourusername/EGOIST-Bot.git`
+2. Install dependencies: `npm install`
+3. Configure environment variables in `.env` (see `.env.example` for placeholders)
+4. Replace `<TOKEN>`, `<CHANNELID>`, and `<ROLEID>` in `index.js` with your actual values or use `.env`
+5. Run: `npm start`
+
+## Environment Variables
+See `.env.example` for required variables. Replace placeholders in `index.js` if not using `.env`.
+
+## License
+MIT
 1. **Clone Repository**:  
    ```bash
    git clone https://github.com/yourusername/EGOIST-Bot.git && cd EGOIST-Bot
@@ -31,14 +49,17 @@ EGO!ST Bot is a feature-rich Discord bot for the EGO!ST ROLEPLAY server, built w
    Create a `.env` file or use Replit Secrets:  
    ```text
    TOKEN=your_discord_bot_token
-   SERVER_RULES_CHANNEL_ID=channel_id
-   RULES_CHANNEL_ID=channel_id
-   TICKET_CATEGORY_ID=category_id
-   NOTIFICATION_CHANNEL_ID=channel_id
-   TRANSCRIPT_CHANNEL_ID=channel_id
-   REACTION_ROLE_CHANNEL_ID=channel_id
-   INVITE_LOG_CHANNEL_ID=channel_id
-   VERIFICATION_ROLE_ID=role_id
+   SERVER_RULES_CHANNEL_ID=server_rules_channel_id
+   RULES_CHANNEL_ID=rules_channel_id
+   TICKET_CATEGORY_ID=ticket_category_id
+   NOTIFICATION_CHANNEL_ID=notification_channel_id
+   TRANSCRIPT_CHANNEL_ID=transcript_channel_id
+   BIRTHDAY_CHANNEL_ID=birthday_channel_id
+   REACTION_ROLE_CHANNEL_ID=reaction_role_channel_id
+   INVITE_LOG_CHANNEL_ID=invite_log_channel_id
+   VERIFICATION_ROLE_ID=verification_role_id
+   BAN_LOG_CHANNEL_ID=ban_log_channel_id
+   INACTIVITY_TIMEOUT=86400000 # Optional, in milliseconds (default: 24 hours)
    ```
    Replace placeholders with your server’s IDs.
 
